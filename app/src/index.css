@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    color: #ffffff;
+    
+    overflow: hidden;
+
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    font-family: "Noto Sans JP", sans-serif;
+}
+html, body, a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+	-webkit-font-variant-ligatures: no-common-ligatures;
+    font-variant-ligatures: no-common-ligatures;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#canvas-container canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#gui-container {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+}
+
+#media {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    width: calc(80px + 16vmin);
+}
+#media > div > div {
+    z-index: 2;
+}
+
+#footer {
+    color: #ffffff;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    font-size: x-small;
+}
+#footer > a {
+    color: #0000ff;
+}
